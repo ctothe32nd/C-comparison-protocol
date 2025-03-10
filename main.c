@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <windows.h>
+#include <unistd.h>
 
 
 int main(){
@@ -25,7 +25,8 @@ int main(){
     //Compare the strings, %d shows the answer is a number
     printf("%d", strcmp(mystr, mystr2));
 
-    Sleep(10000);//10000 milliseconds, 10 seconds
-    
+    //Sleep for 10 seconds (should probably be adjusted)
+    sleep(10); //The 10 means 10 seconds
+
     return 0;
 }
